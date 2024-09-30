@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f5e82e4-2ac6-49ca-8b1d-cf8a185f640a" name="Changes" comment="" />
+    <list default="true" id="5f5e82e4-2ac6-49ca-8b1d-cf8a185f640a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/move_my_character_with_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/move_my_character_with_key.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

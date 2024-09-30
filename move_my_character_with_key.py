@@ -12,7 +12,6 @@ idle = True
 x, y = 640, 512
 running = True
 
-
 def handle_events():
     global dir_x, dir_y, direction, running, idle
     events = get_events()
@@ -51,29 +50,28 @@ def handle_events():
             if dir_x == 0 and dir_y == 0:
                 idle = True
 
-
 while running:
     clear_canvas()
     background.draw(640, 512)
 
     if idle:
         if direction == 'back':
-            sprite_sheet.clip_draw(5 * 95, 159 * 3, 95, 159, x, y)
+            sprite_sheet.clip_draw(5 * 95, 159 * 3, 95, 159, x, y, 95 * 1.1, 159 * 1.1)  # 10% 확대
         elif direction == 'right':
-            sprite_sheet.clip_draw(5 * 95, 159, 95, 159, x, y)
+            sprite_sheet.clip_draw(5 * 95, 159, 95, 159, x, y, 95 * 1.1, 159 * 1.1)
         elif direction == 'left':
-            sprite_sheet.clip_draw(5 * 95, 159 * 2, 95, 159, x, y)
+            sprite_sheet.clip_draw(5 * 95, 159 * 2, 95, 159, x, y, 95 * 1.1, 159 * 1.1)
         elif direction == 'front':
-            sprite_sheet.clip_draw(5 * 95, 0, 95, 159, x, y)
+            sprite_sheet.clip_draw(5 * 95, 0, 95, 159, x, y, 95 * 1.1, 159 * 1.1)
     else:
         if direction == 'back':
-            sprite_sheet.clip_draw(frame * 95, 159 * 3, 95, 159, x, y)
+            sprite_sheet.clip_draw(frame * 95, 159 * 3, 95, 159, x, y, 95 * 1.1, 159 * 1.1)
         elif direction == 'right':
-            sprite_sheet.clip_draw(frame * 95, 159, 95, 159, x, y)
+            sprite_sheet.clip_draw(frame * 95, 159, 95, 159, x, y, 95 * 1.1, 159 * 1.1)
         elif direction == 'left':
-            sprite_sheet.clip_draw(frame * 95, 159 * 2, 95, 159, x, y)
+            sprite_sheet.clip_draw(frame * 95, 159 * 2, 95, 159, x, y, 95 * 1.1, 159 * 1.1)
         elif direction == 'front':
-            sprite_sheet.clip_draw(frame * 95, 0, 95, 159, x, y)
+            sprite_sheet.clip_draw(frame * 95, 0, 95, 159, x, y, 95 * 1.1, 159 * 1.1)
 
     update_canvas()
     handle_events()
